@@ -70,21 +70,122 @@
 // multiple
 // lines`)
 
-const age = 12
+// const age = 12
 
+// if (age >= 18) {
+//   console.log('Sarah can start driving license 🚗')
+// } else {
+//   const yearsLeft = 18 - age
+//   console.log(`Sarah is too young, Wait another ${yearsLeft} year`)
+// }
+
+// const birthYear = 1890
+// let century
+// if (birthYear <= 2000) {
+//   century = 20
+// } else {
+//   century = 21
+// }
+
+// console.log(century)
+
+// const inputYear = '1994'
+// console.log(Number(inputYear), inputYear)
+// console.log(Number(inputYear) + 18)
+
+// console.log(Number('Kaneki'))
+// console.log(typeof NaN)
+
+// console.log(String(23))
+
+//5 falsy values: 0, "", undefined, null, NaN
+// console.log(Boolean(0))
+// console.log(Boolean(undefined))
+// console.log(Boolean('Kaneki'))
+// console.log(Boolean({}))
+// console.log(Boolean(''))
+
+// const money = 100
+// if (money) {
+//   console.log('Dont spend it all 😁')
+// } else {
+//   console.log('You shold get a job!')
+// }
+
+// let height
+
+// height = 30
+// if (height) {
+//   console.log('defined')
+// } else {
+//   console.log('UNDEFINED')
+// }
+
+// const age = 18
+// if (age === 18) console.log('You just vecame an adult')
+
+// const favourite = Number(prompt("What's your faourite number?"))
+// console.log(favourite)
+// console.log(typeof favourite)
+
+// if (favourite === 23) {
+//   console.log('NUMBER')
+// } else {
+//   console.log('NO NUMBER')
+// }
+
+// const hasDriversLicense = true //A
+// const hasGoodVision = false //B
+
+// console.log(hasDriversLicense && hasGoodVision)
+// console.log(hasDriversLicense || hasGoodVision)
+// console.log(!hasDriversLicense)
+
+// const shouldDrive = hasDriversLicense && hasGoodVision
+
+// if (shouldDrive) {
+//   console.log('Sarah is able to drive')
+// } else {
+//   console.log('Some else should drive')
+// }
+// const day = 'sunday'
+
+// switch (day) {
+//   case 'monday':
+//     console.log('Plan course structure')
+//     console.log('Go to coding meetup')
+//     break
+//   case 'tuesday':
+//     console.log('Prepare throry videos')
+//     break
+//   case 'wednesday':
+//   case 'thusday':
+//     console.log('Write code examples')
+//     break
+//   case 'friday':
+//     console.log('Record videos')
+//     break
+//   case 'saturday':
+//   case 'sunday':
+//     console.log('Enjoy the weekend :D')
+//     break
+//   default:
+//     console.log('Not a valid day!')
+// }
+
+const age = 28
+
+// age >= 18 ? console.log('I like to drun¥¥ink wine 🍷') : console.log('NOOOOOO')
+
+const drink = age >= 18 ? 'wine' : 'water'
+console.log(drink)
+
+let drink2
 if (age >= 18) {
-  console.log('Sarah can start driving license 🚗')
+  drink2 = 'wine2'
 } else {
-  const yearsLeft = 18 - age
-  console.log(`Sarah is too young, Wait another ${yearsLeft} year`)
+  drink2 = 'water2'
 }
+console.log(drink2)
 
-const birthYear = 1890
-let century
-if (birthYear <= 2000) {
-  century = 20
-} else {
-  century = 21
-}
-
-console.log(century)
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💦'}`)
