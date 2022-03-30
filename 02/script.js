@@ -130,7 +130,159 @@ if (hasDriversLicense) console.log('I can drive ')
 // const age2 = calcAge(years1[years1.length - 1])
 // console.log(age, age1, age2)
 
-const friends = ['Michael', 'Steven', 'Peter']
-const newLength = friends.push('Jay')
-console.log(friends)
-console.log(newLength)
+//All elements
+// const friends = ['Michael', 'Steven', 'Peter']
+// const newLength = friends.push('Jay')
+// console.log(friends)
+// console.log(newLength)
+
+// friends.unshift('John')
+// console.log(friends)
+// // Remove elements
+// const poped = friends.pop() //Last
+// console.log(friends)
+// console.log(poped)
+// friends.pop() //Last
+
+// console.log(friends)
+// friends.shift() //First
+// console.log(friends)
+
+// console.log(friends.indexOf('Steven'))
+// console.log(friends.indexOf('BOM'))
+
+// console.log(friends.includes('Steven'))
+// console.log(friends.includes('BOM'))
+
+// if (friends.includes('Steven')) {
+//   console.log('You have a friend calls Steven')
+// }
+
+// const jonasArray = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven'],
+// ]
+
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   age: 2037 - 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven'],
+// }
+// console.log(jonas)
+// console.log(jonas.lastName)
+// console.log(jonas['lastName'])
+
+// const nameKey = 'Name'
+// console.log(jonas['first' + nameKey])
+// console.log(jonas['last' + nameKey])
+
+// const interestedIn = prompt('入力してください')
+
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn])
+// } else {
+//   console.log('NOOOOO')
+// }
+
+// jonas.location = 'VIETNAM'
+// jonas['twitter'] = '@jonasschmedtman'
+// console.log(jonas)
+
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   birthYear: 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven'],
+//   hasDriversLicense: false,
+
+//   // calcAge: function () {
+//   //   console.log(this)
+//   //   return 2037 - this.birthYear
+//   // },
+
+//   calcAge: function () {
+//     this.age = 2037 - this.birthYear
+//     return this.age
+//   },
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${
+//       this.job
+//     }, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+//   },
+// }
+
+// console.log(jonas.calcAge())
+// console.log(jonas.age)
+// console.log(jonas.age)
+// console.log(jonas.age)
+// // console.log(jonas['calcAge'](1995))
+
+// console.log(
+//   `${jonas.firstName} is a ${jonas.age} year old ${jonas.job}, and ${
+//     jonas.hasDriversLicense ? "he has a driver's license" : 'No driver'
+//   }`
+// )
+// console.log(jonas.getSummary())
+
+// const mark = {
+//   fullName: 'Mark Miller',
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2
+//     return this.bmi
+//   },
+// }
+
+// const john = {
+//   fullName: 'John Smith',
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function () {
+//     this.bmi = this.mass / this.height ** 2
+//     return this.bmi
+//   },
+// }
+
+// mark.calcBMI()
+// john.calcBMI()
+// console.log(mark.bmi.toFixed(2), john.bmi.toFixed(2))
+
+// console.log('Lifting weights repetition 1 🏋️‍♀️')
+// console.log('Lifting weights repetition 2 🏋️‍♀️')
+// console.log('Lifting weights repetition 3 🏋️‍♀️')
+// console.log('Lifting weights repetition 4 🏋️‍♀️')
+// console.log('Lifting weights repetition 5 🏋️‍♀️')
+// console.log('Lifting weights repetition 6 🏋️‍♀️')
+// console.log('Lifting weights repetition 7 🏋️‍♀️')
+// console.log('Lifting weights repetition 8 🏋️‍♀️')
+// console.log('Lifting weights repetition 9 🏋️‍♀️')
+// console.log('Lifting weights repetition 10 🏋️‍♀️')
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`)
+// }
+
+const jonasArray = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Michael', 'Peter', 'Steven'],
+  true,
+]
+
+// console.log(jonasArray[0])
+// console.log(jonasArray[1])
+// // ...
+// console.log(jonasArray[jonasArray.length - 1])
+
+for (let i = 0; i < jonasArray.length; i++) {
+  console.log(jonasArray[i], typeof jonasArray[i])
+}
